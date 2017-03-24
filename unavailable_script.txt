@@ -1,0 +1,15 @@
+<script>
+function checkDate() {
+    var currentDate = new Date();
+    var day = currentDate.getDay();
+    var month = currentDate.getMonth() + 1;
+    var year = currentDate.getFullYear(); 
+    var curentDate = new Date();
+    var expoDate = new Date('2017-03-29');
+    
+    if(curentDate < expoDate){
+        window.location.href = 'unavailable.php';
+    }
+ } 
+checkDate();
+</script>
